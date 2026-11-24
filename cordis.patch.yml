@@ -1,0 +1,8 @@
+# dsh-desktop-clone - DSH bundle patch layer
+#
+# Mounts the clone controller as a Host plugin. The plugin spawns the PowerShell
+# host and the in-session agent and exposes desktop_clone_* tools to the agent.
+
+- insert:
+    - id: desktop-clone
+      name: 'dsh-desktop-clone/mcp/dsh-plugin.mjs'

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "桌面分身 / Desktop clone",
+    "description": "在独立的 Windows 子会话里运行并操作程序：可见、可随时接管，且不占用你的鼠标。",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,8 @@
+# runtime state
+window.json
+*.log
+*.err
+# probe output
+*.png
+# future
+node_modules/

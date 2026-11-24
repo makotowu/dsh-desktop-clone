@@ -1,0 +1,35 @@
+{
+  "name": "dsh-desktop-clone",
+  "version": "0.1.0",
+  "description": "Run Windows programs in an isolated, visible Windows child session driven by DSH, without stealing the user's mouse.",
+  "type": "module",
+  "private": false,
+  "os": ["win32"],
+  "exports": {
+    ".": "./mcp/dsh-plugin.mjs",
+    "./mcp/dsh-plugin.mjs": "./mcp/dsh-plugin.mjs",
+    "./mcp/server.mjs": "./mcp/server.mjs",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json",
+    "./*": "./*"
+  },
+  "files": [
+    "mcp/",
+    "host/",
+    "locale/*.json",
+    "docs/",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT"
+}
